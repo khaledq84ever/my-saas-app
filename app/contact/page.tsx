@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us - Modern SaaS",
-  description: "Get in touch with our team. We're here to help you grow your business.",
+  description: "Get in touch with our team. We are here to help you grow your business.",
 };
 
 const contactInfo = [
@@ -47,7 +47,7 @@ export default function ContactPage() {
               Get in touch
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Have a question or want to discuss your project? We'd love to hear from you.
+              Have a question or want to discuss your project? We would love to hear from you.
             </p>
           </div>
 

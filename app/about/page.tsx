@@ -20,7 +20,7 @@ const values = [
   },
   {
     title: "Customer Success",
-    description: "Your growth is our success. We're committed to helping you achieve your goals.",
+    description: "Your growth is our success. We are committed to helping you achieve your goals.",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function AboutPage() {
               solutions accessible to companies of all sizes.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Founded in 2024, we've helped over 10,000 businesses streamline their
+              {"We've"} streamline their
               workflows, boost productivity, and achieve measurable growth.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
             Join our journey
           </h2>
           <p className="text-xl text-slate-300 mb-8">
-            We're always looking for talented people to join our team.
+            We are always looking for talented people to join our team.
           </p>
           <a
             href="/contact"

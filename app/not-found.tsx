@@ -10,7 +10,7 @@ export default function NotFound() {
           Page not found
         </h2>
         <p className="text-slate-600 mb-8 max-w-md mx-auto">
-          Sorry, we couldn't find the page you're looking for. The page might have been moved or deleted.
+          Sorry, we could not find the page you're looking for. The page might have been moved or deleted.
         </p>
         <Link href="/">
           <Button>Back to Home</Button>
