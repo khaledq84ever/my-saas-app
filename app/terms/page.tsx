@@ -19,7 +19,7 @@ export default function TermsPage() {
           <p>Permission is granted to temporarily use one copy of the materials for personal, non-commercial transitory viewing only.</p>
 
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">3. Disclaimer</h2>
-          <p>The materials on this website are provided "as is". We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.</p>
+          <p>The materials on this website are provided as is. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.</p>
 
           <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">4. Limitations</h2>
           <p>In no event shall we be liable for any damages arising out of or in connection with the use of this website.</p>

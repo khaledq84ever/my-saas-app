@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const testimonials = [
-  {
+{
     name: "Sarah Johnson",
     role: "CEO, TechStartup",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
@@ -70,10 +71,12 @@ export default function TestimonialsPage() {
                 className="bg-white rounded-xl border border-slate-200 p-8"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover"
+                    width={56}
+                    height={56}
+                    className="rounded-full object-cover"
                   />
                   <div>
                     <h3 className="font-semibold text-slate-900">{testimonial.name}</h3>
