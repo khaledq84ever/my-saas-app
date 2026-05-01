@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
+import LangSwitch from "./LangSwitch";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,26 +29,36 @@ export default function Navbar() {
             <span className="text-xl font-bold text-slate-900 dark:text-white">SaaS</span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors whitespace-nowrap"
               >
                 {link.name}
               </Link>
             ))}
+            <LangSwitch />
             <ThemeToggle />
-            <Link
-              href="/contact"
-              className="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-            >
-              Get Started
-            </Link>
+            <div className="flex items-center gap-2">
+              <Link
+                href="/login"
+                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 font-medium"
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                className="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
+            <LangSwitch />
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -93,13 +104,22 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                className="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium text-center"
-                onClick={() => setIsOpen(false)}
-              >
-                Get Started
-              </Link>
+              <div className="flex gap-2 pt-2 border-t border-slate-200 dark:border-slate-700">
+                <Link
+                  href="/login"
+                  className="flex-1 text-center py-2.5 text-slate-600 dark:text-slate-300 font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/signup"
+                  className="flex-1 bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium text-center"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Sign Up
+                </Link>
+              </div>
             </div>
           </div>
         )}
