@@ -38,7 +38,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <LangSwitch />
             <ThemeToggle />
             <div className="flex items-center gap-2">
               <Link
