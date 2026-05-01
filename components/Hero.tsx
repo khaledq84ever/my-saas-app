@@ -12,29 +12,29 @@ export default function Hero() {
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-            Now in public beta
+            الآن في النسخة التجريبية
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-6">
-            Build something{" "}
+            ابني شيئا{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">
-              amazing
+              رائعا
             </span>{" "}
-            today
+            اليوم
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed">
-            A powerful platform that helps teams build better products faster.
-            Scale your business with modern tools and insights.
+            منصة قوية تساعد الفرق على بناء منتجات أفضل بشكل أسرع.
+            قلل عملك وزد ارباحك مع الادوات والميزات الحديثة.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg">Start Free Trial</Button>
+              <Button size="lg">ابدأ مجانا</Button>
             </Link>
             <Link href="/about">
               <Button variant="outline" size="lg">
-                Learn More
+                اعرف المزيد
               </Button>
             </Link>
           </div>

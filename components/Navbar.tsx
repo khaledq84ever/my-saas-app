@@ -3,21 +3,20 @@
 import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
-import LangSwitch from "./LangSwitch";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Features", href: "/features" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Testimonials", href: "/testimonials" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Careers", href: "/careers" },
-    { name: "Blog", href: "/blog" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "الرئيسية", href: "/" },
+    { name: "المميزات", href: "/features" },
+    { name: "الاسعار", href: "/pricing" },
+    { name: "اراء العملاء", href: "/testimonials" },
+    { name: "الاسئلة الشائعة", href: "/faq" },
+    { name: "وظائف", href: "/careers" },
+    { name: "المدونة", href: "/blog" },
+    { name: "من نحن", href: "/about" },
+    { name: "اتصل بنا", href: "/contact" },
   ];
 
   return (
@@ -46,19 +45,18 @@ export default function Navbar() {
                 href="/login"
                 className="text-slate-600 dark:text-slate-300 hover:text-blue-600 font-medium"
               >
-                Login
+                تسجيل الدخول
               </Link>
               <Link
                 href="/signup"
                 className="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
-                Sign Up
+                انشاء حساب
               </Link>
             </div>
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
-            <LangSwitch />
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -110,14 +108,14 @@ export default function Navbar() {
                   className="flex-1 text-center py-2.5 text-slate-600 dark:text-slate-300 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
-                  Login
+                  تسجيل الدخول
                 </Link>
                 <Link
                   href="/signup"
                   className="flex-1 bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium text-center"
                   onClick={() => setIsOpen(false)}
                 >
-                  Sign Up
+                  انشاء حساب
                 </Link>
               </div>
             </div>

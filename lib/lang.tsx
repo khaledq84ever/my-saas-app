@@ -13,7 +13,7 @@ interface LangContextType {
 const LangContext = createContext<LangContextType | undefined>(undefined);
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("ar");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -36,12 +36,12 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
   };
 
   const t = lang === "ar" ? {
-    nav: { ...en.nav, ...{ home: "الرئيسية", features: "المميزات", pricing: "الاسعار", testimonials: "اراء العملاء", faq: "الاسئلة الشائعة", careers: "وظائف", blog: "المدونة", about: "من نحن", contact: "اتصل بنا", login: "تسجيل الدخول", signup: "انشاء حساب", dashboard: "لوحة التحكم", logout: "تسجيل الخروج" }},
-    hero: en.hero,
-    footer: { ...en.footer, ...{ description: "تمكين الشركات من الادوات الحديثة للبناء والتوسع والنمو.", product: "المنتج", company: "الشركة" }},
-    auth: { ...en.auth, ...{ login: "تسجيل الدخول", signup: "انشاء حساب", email: "البريد الالكتروني", password: "كلمة المرور", confirmPassword: "تاكيد كلمة المرور", rememberMe: "تذكرني", forgotPassword: "نسيت كلمة المرور؟", noAccount: "ليس لديك حساب؟", hasAccount: "لديك حساب بالفعل؟", createAccount: "انشاء حساب", signIn: "تسجيل", signUp: "سجل الان", firstName: "الاسم الاول", lastName: "اسم العائلة", orContinueWith: "او تابع باستخدام", agreeTerms: "اوافق على", termsOfService: "شروط الخدمة", and: "و", privacyPolicy: "سياسة الخصوصية" }},
-    dashboard: { ...en.dashboard, ...{ welcome: "مرحبا", profile: "الملف الشخصي", settings: "الاعدادات", myAccount: "حسابي", editProfile: "تعديل الملف", changePassword: "تغيير كلمة المرور", deleteAccount: "حذف الحساب" }},
-    common: { ...en.common, ...{ loading: "جاري التحميل...", error: "خطا", success: "نجاح", save: "حفظ", cancel: "الغاء", delete: "حذف", edit: "تعديل", back: "رجوع", next: "التالي", previous: "السابق", submit: "ارسال", search: "بحث" }},
+    nav: { home: "الرئيسية", features: "المميزات", pricing: "الاسعار", testimonials: "اراء العملاء", faq: "الاسئلة الشائعة", careers: "وظائف", blog: "المدونة", about: "من نحن", contact: "اتصل بنا", login: "تسجيل الدخول", signup: "انشاء حساب", dashboard: "لوحة التحكم", logout: "تسجيل الخروج" },
+    hero: { title: "ابني شيئا رائعا", subtitle: "منصة قوية لمساعدتك على البناء والتوسع والنمو باستخدام الادوات والميزات الحديثة.", getStarted: "ابدأ مجانا", learnMore: "اعرف المزيد" },
+    footer: { description: "تمكين الشركات من الادوات الحديثة للبناء والتوسع والنمو.", product: "المنتج", company: "الشركة", subscribe: "اشترك في النشرة البريدية", subscribeBtn: "اشترك", privacy: "سياسة الخصوصية", terms: "الشروط والاحكام", rights: "جميع الحقوق محفوظة" },
+    auth: { login: "تسجيل الدخول", signup: "انشاء حساب", email: "البريد الالكتروني", password: "كلمة المرور", confirmPassword: "تاكيد كلمة المرور", rememberMe: "تذكرني", forgotPassword: "نسيت كلمة المرور؟", noAccount: "ليس لديك حساب؟", hasAccount: "لديك حساب بالفعل؟", createAccount: "انشاء حساب", signIn: "تسجيل", signUp: "سجل الان", firstName: "الاسم الاول", lastName: "اسم العائلة", orContinueWith: "او تابع باستخدام", agreeTerms: "اوافق على", termsOfService: "شروط الخدمة", and: "و", privacyPolicy: "سياسة الخصوصية" },
+    dashboard: { welcome: "مرحبا", profile: "الملف الشخصي", settings: "الاعدادات", myAccount: "حسابي", editProfile: "تعديل الملف", changePassword: "تغيير كلمة المرور", deleteAccount: "حذف الحساب" },
+    common: { loading: "جاري التحميل...", error: "خطا", success: "نجاح", save: "حفظ", cancel: "الغاء", delete: "حذف", edit: "تعديل", back: "رجوع", next: "التالي", previous: "السابق", submit: "ارسال", search: "ب��ث" },
   } : en;
 
   return (
