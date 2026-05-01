@@ -1,7 +1,7 @@
 "use client";
 
-import { useLang } from "./lang";
-import { Lang } from "./translations";
+import { useLang } from "../lib/lang";
+import { Lang } from "../lib/translations";
 
 const languages: { code: Lang; name: string; flag: string }[] = [
   { code: "en", name: "English", flag: "🇺🇸" },
