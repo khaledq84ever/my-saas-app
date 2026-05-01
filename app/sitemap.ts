@@ -1,4 +1,4 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute {
   const baseUrl = "https://my-saas-app-rouge-three.vercel.app";

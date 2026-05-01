@@ -1,13 +1,6 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
-export const metadata: MetadataRoute = {
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-export default function robots() {
+export default function robots(): MetadataRoute {
   return {
     rules: {
       userAgent: "*",
